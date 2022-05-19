@@ -8,9 +8,10 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 const flash = require('connect-flash');
 // import mongoose
+// mongodb://localhost:27017/db_staycation
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/db_staycation', {
-  useNewUrlParser: true,
+mongoose.connect('mongodb+srv://iqra94:Banyak123@cluster0.yrwjs.mongodb.net/db_staycation_mern?retryWrites=true&w=majority', {
+  // useNewUrlParser: true,
   useUnifiedTopology: true,
   // useCreateIndex: true,
   // useFindAndModify: false,
